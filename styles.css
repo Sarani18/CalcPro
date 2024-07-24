@@ -1,0 +1,159 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("pngtree-cute-hand-drawn-style-mathematics-education-pink-background-image_337362.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f5648b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Header styling */
+header {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.656);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo img {
+    height: 75px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-family: 'Brush Script MT', cursive;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 82, 134, 0.5);
+}
+
+.welcome-message {
+    margin: 17px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-message h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 1.7em;
+}
+
+/* Calculator styling */
+.calculator {
+    width: 500px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.output {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    text-align: right;
+    padding: 10px;
+    font-size: 28px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.calculator-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button, button {
+    background: #fff;
+    color: rgb(255, 82, 134);
+    padding: 15px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 0 10px rgba(255, 82, 134, 0.5);
+    border: none; /* Remove border */
+}
+
+.button:hover, button:hover {
+    background: rgb(255, 108, 135);
+    color: #fff;
+}
+
+
+input[type="number"], input[type="text"], select {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+input[type="number"]::placeholder, input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+#calculator, #bmi-calculator, #length-converter, #weight-converter, #temperature-converter, #time-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bmi-result, #length-result, #weight-result, #temperature-result, #time-result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

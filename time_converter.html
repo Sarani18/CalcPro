@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Converter</h1>
+        <div id="time-converter">
+            <input type="number" id="time-value" placeholder="Time">
+            <select id="time-from-unit">
+                <option value="seconds">Seconds</option>
+                <option value="minutes">Minutes</option>
+                <option value="hours">Hours</option>
+                <option value="days">Days</option>
+            </select>
+            <select id="time-to-unit">
+                <option value="seconds">Seconds</option>
+                <option value="minutes">Minutes</option>
+                <option value="hours">Hours</option>
+                <option value="days">Days</option>
+            </select>
+            <button onclick="convertTime()">Convert</button>
+            <div id="time-result"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

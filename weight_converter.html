@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weight Converter</h1>
+        <div id="weight-converter">
+            <input type="number" id="weight-value" placeholder="Weight">
+            <select id="weight-from-unit">
+                <option value="kilograms">Kilograms</option>
+                <option value="grams">Grams</option>
+                <option value="pounds">Pounds</option>
+                <option value="ounces">Ounces</option>
+            </select>
+            <select id="weight-to-unit">
+                <option value="kilograms">Kilograms</option>
+                <option value="grams">Grams</option>
+                <option value="pounds">Pounds</option>
+                <option value="ounces">Ounces</option>
+            </select>
+            <button onclick="convertWeight()">Convert</button>
+            <div id="weight-result"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
